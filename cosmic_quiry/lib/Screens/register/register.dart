@@ -1,4 +1,4 @@
-import 'package:cosmic_quiry/Components/background.dart';
+
 import 'package:cosmic_quiry/Components/popup.dart';
 import 'package:cosmic_quiry/Screens/home/home.dart';
 import 'package:cosmic_quiry/Screens/login/login.dart';
@@ -76,7 +76,7 @@ class RegisterScreen extends State<RegisterPage> {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      body: Background(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[

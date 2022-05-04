@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:cosmic_quiry/Components/background.dart';
 import 'package:cosmic_quiry/Screens/home/home.dart';
 import 'package:cosmic_quiry/Screens/register/register.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +29,6 @@ class LoginScreen extends State<LoginPage> {
       SharedPreferences prefs = await SharedPreferences.getInstance();
       prefs.setString('jwt', jsonResponse);
 
-      //login giriş başarılı!
       Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(
               builder: (BuildContext context) =>
@@ -48,7 +46,7 @@ class LoginScreen extends State<LoginPage> {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      body: Background(
+      body:Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
